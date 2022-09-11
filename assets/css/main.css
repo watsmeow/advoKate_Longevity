@@ -28,6 +28,13 @@ body {
 
 ol, ul {
 	list-style: none;
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+p, #navPanel .link {
+	font-weight: 400;
+	font-size: 1.25rem;
 }
 
 blockquote, q {
@@ -221,7 +228,7 @@ input, select, textarea {
 
 	header.special {
 		text-align: center;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 	}
 
 	header.major {
@@ -1959,6 +1966,18 @@ input, select, textarea {
 			padding: 0 1.5rem;
 		}
 
+		input[type="submit"].category,
+		input[type="reset"].category,
+		input[type="button"].category,
+		button.category,
+		.button.category {
+			font-size: 0.8rem;
+			height: 2.4375rem;
+			line-height: 2.4375rem;
+			padding: 0 1.5rem;
+			margin-top: 3rem;
+		}
+
 		input[type="submit"].large,
 		input[type="reset"].large,
 		input[type="button"].large,
@@ -2447,6 +2466,12 @@ input, select, textarea {
 			max-width: 75%;
 		}
 
+		.image.headshot {
+			box-shadow: 0px 15px 98px -20px rgba(0, 0, 0, 0.35);
+			margin: 4rem auto 3rem auto;
+			max-width: 25%;
+		}
+
 			@media screen and (max-width: 1280px) {
 
 				.image.special {
@@ -2521,7 +2546,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 .5rem 0;
 		padding-left: 1rem;
 	}
 
@@ -2812,7 +2837,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.75rem;
+				font-size: 3rem;
 			}
 
 /* Table */
@@ -2905,7 +2930,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding: 3rem 0 4rem 0 ;
 	}
 
 		.wrapper.special {
@@ -2940,10 +2965,6 @@ input, select, textarea {
 				}
 
 			}
-
-		.wrapper.alt header {
-			padding-bottom: 5rem;
-		}
 
 		.wrapper.alt footer {
 			padding-top: 6rem;
@@ -4186,6 +4207,12 @@ input, select, textarea {
 			margin: 4rem 0 2rem 0;
 		}
 
+		.footer-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 			#footer .content .form {
 				background: #ffffff;
 				border-radius: 4px;
@@ -4427,17 +4454,20 @@ input, select, textarea {
 					display: -webkit-flex;
 					display: -ms-flex;
 					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					align-content: center;
 					background: #20c5e7;
 					border-radius: 4px;
 					box-shadow: 0px 15px 59px -20px rgba(0, 0, 0, 0.35);
 					margin-bottom: 2rem;
-					padding: 2rem;
+					padding: 2rem 2rem 2rem 6rem;
 					text-align: left;
 				}
 
 					#footer .content .icons li .icon {
-						font-size: 1.5rem;
-						margin-right: 1rem;
+						font-size: 3rem;
+						margin-right: 3rem;
 						line-height: 2rem;
 					}
 
